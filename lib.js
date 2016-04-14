@@ -10,7 +10,11 @@ function el (tagName) {
     }
     if (typeof arg === 'object'){
       for (var attr in arg) {
-        element[attr] = arg[attr];
+        if (element[attr] != null) {
+          element[attr] = arg[attr];
+        } else {
+          element.setAttribute(attr, arg[attr]);
+        }
       }
     }
   }
