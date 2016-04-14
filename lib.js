@@ -76,9 +76,10 @@ function mount (parent, child, before) {
   return true;
 }
 
-function List (View) {
+function List (View, key) {
   this.View = View;
   this.views = [];
+  // Didn't have time to show a keyed list.. check out http://frzr.js.org for that
 }
 
 List.prototype.update = function (data) {
