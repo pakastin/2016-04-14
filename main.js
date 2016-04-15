@@ -26,7 +26,7 @@ var list = [
   el('li', 'Started with node.js in 2011'),
   el('li', 'Lead developer of iDiD digital signage',
     ' ',
-    el('a', { href: 'http://idid.fi' }, 'idid.fi')
+    el('a', { href: 'http://idid.fi', target: '_blank' }, 'idid.fi')
   )
 ];
 
